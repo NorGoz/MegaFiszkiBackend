@@ -20,8 +20,10 @@ export class WordRouter implements MyRouter {
 
     private addWord = async (req:Request,res:Response): Promise<void> => {
         const word: Word = req.body;
+        console.log(word)
         const newWord = new WordRecord(word);
         const response = await newWord.insert();
+        console.log(response)
         res.json(response)
     }
 
@@ -34,8 +36,12 @@ export class WordRouter implements MyRouter {
 
     private editWord = async (req:Request,res:Response): Promise<void> => {
         const {id} = req.params
+        console.log(`id z param w editword ${id}`)
+        // console.log(`req body w edit ${req.body}`)
         const obj: Word = req.body
+        console.log(obj)
         const word = await WordRecord.getOne(id);
+        console.log(word)
         await word.update(obj);
         res.end();
     }
