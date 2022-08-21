@@ -1,8 +1,14 @@
 ## Fiszki Backend
 
-Mój osobisty projekt na zakończenie rocznego kursu backendowego MegaK
+Mój osobisty projekt na zakończenie rocznego kursu backendowego MegaK.\
+Projekt będzie rozwijany.
 
 ---
+
+## MegaFiszki DEMO
+Link do yt https://youtu.be/g424UmRN9Ck .\
+Na Filmie widzimy już połączony backend z frontendem.\
+Wszystkie dane zwracane są z api.
 
 Fiszki Backend is the webserver for Fiszki Project.
 
